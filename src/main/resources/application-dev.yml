@@ -1,0 +1,21 @@
+spring:
+    datasource:
+      username: root
+      password: my-secret-pw
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/imageDb
+
+      remove-abandoned: true
+      abandon-when-percentage-full: 80
+      remove-abandoned-timeout: 50
+      log-abandoned: true
+
+      max-age: 10000
+      min-idle: 5
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+debug: false
+
+
